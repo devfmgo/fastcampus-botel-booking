@@ -10,8 +10,8 @@ function App() {
         setHotels(Object.values(snapshot.val()));
       }
     });
-  });
-  return <main> {JSON.stringify(hotels)} </main>;
+  }, []);
+  return <main className="mt-2"> {JSON.stringify(hotels)} </main>;
 }
 
 export default App;
